@@ -2,19 +2,32 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Noodle shop</title>
+<title>search</title>
 <link rel="stylesheet" href="nile.css">
 </head>
 <body>
 <h1>top</h1>
 
-<form method="get" action="search.php" class="search">
-<div>
-<input type="text" name="example" class="textBox">
-<input type="submit" value="" class="btn">
+<ul>
+	<li><a href="index.php"><img src="image/nile.png"></a></li>
+	<li><form method="get" action="search.php">
+		<input type="text" id="search" name="search" />
+		<input type="submit" name="submit" value="検索" /></br>
+		</form></li>
+	<li><a href="#"><img src="image/coin.png"></a></li>
+	<li><a href="#"><img src="image/会員情報.png"></a></li>
+</ul>
 
+
+<div id="menu">
+	<ul>
+		<li><a href="#">Baseball</a></li>
+		<li><a href="#">Soccer</a></li>
+		<li><a href="#">Basketball</a></li>
+		<li><a href="#">Tennis</a></li>
+	</ul>
 </div>
-</form>
+
 
 </body>
 </html>

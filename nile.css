@@ -39,37 +39,45 @@ th, td{
 	color:#c44;
 }
 
-
-form.search {
-margin: 0;
+#menu {
+	padding: 0px;
+	top: auto;
+	left: auto;
+	right: auto;
+	bottom: auto;
+	margin: 0px;
+}
+#menu ul {
+	padding: 0px;
+	margin: 0px;
 }
 
-/* --- ボックス --- */
-form.search div {
-width: 400px; /* ボックスの幅 */
-padding: 1px 0; /* ボックスのパディング（上下、左右） */
-background-color: #ffffff; /* ボックスの背景色 */
-border: 1px #808080 solid; /* ボックスの境界線 */
+#menu ul li{
+	float: left;
+	width: 24.4%;
+	height: 30px;
+	list-style-type: none;
+	text-align: center;
+	background-color: #FFF;
+	border-top-width: 2px;
+	border-right-width: 2px;
+	border-bottom-width: 2px;
+	border-left-width: 2px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #000;
+	border-right-color: #000;
+	border-bottom-color: #000;
+	border-left-color: #000;
+	padding: 0px;
+	margin: 0px;
+	display: block;
 }
-
-/* --- テキストボックス --- */
-form.search input.textBox {
-width: 298px; /* テキストボックスの幅 */
-margin: 0 4px 0 5px; /* テキストボックスのマージン（上右下左） */
-padding: 0;
-background-color: #ffffff; /* テキストボックスの背景色 */
-border: none; /* テキストボックスの境界線（なし） */
-color: #000000;
-}
-
-/* --- ボタン --- */
-form.search input.btn {
-width: 40px; /* ボタンの幅 */
-height: 40px; /* ボタンの高さ */
-padding: 0;
-background: url('image/search.png'); /* ボタンの背景 */
-border: 0px solid; /* ボタンの境界線 */
-font-weight: bold;
-color: #000000;
-letter-spacing: 0.3em; /* 文字間のスペース */
+#menu ul li a {
+	font-size: 25px;
+	text-decoration: none;
+	color: #000;
+	display: block;
 }
