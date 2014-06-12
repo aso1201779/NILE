@@ -6,7 +6,8 @@
 <link rel="stylesheet" href="nile.css">
 </head>
 <body>
-<h1>お問い合わせページ</h1>
+<?php include 'top.php';?><br><br>
+<h1>会員情報ページ</h1>
 
 </body>
 </html>

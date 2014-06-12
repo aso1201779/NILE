@@ -6,7 +6,8 @@
 <link rel="stylesheet" href="nile.css">
 </head>
 <body>
-<h1>利用規約ページ</h1>
+<?php include 'top.php';?><br><br>
+<h1>カートページ</h1>
 
 </body>
 </html>

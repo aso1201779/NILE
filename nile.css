@@ -19,24 +19,26 @@ h1{
 	font-size: 32px;
 	text-align: center;
 }
-table{
-	width: 500px;
-	margin: 15px auto;
-	padding: 0;
-	background-color: #fff;
-	border-collapse: collapse;
-}
-th{
-	text-align: left;
-}
-th, td{
-	margin: 0;
-	padding: 6px 16px;
-	border-bottom: 12px solid #bbb;
+h2{
+	font-size: 28px;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #000;
 }
 .error{
 	font-weight:bold;
 	color:#c44;
+}
+
+.center{
+	text-align: center;
+}
+
+.centerLeft{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	width: 850px;
 }
 
 #left{
@@ -44,7 +46,6 @@ th, td{
 	width: 800px;
 	float:left;
 	margin-left: 20px;
-	margin-bottom:20px;
 	display: block;
 }
 #icon{
@@ -69,7 +70,6 @@ th, td{
 	width: 350px;
 	float: right;
 	margin-right: 20px;
-	margin-bottom: 20px;
 }
 
 #right lu{

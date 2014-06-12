@@ -7,12 +7,7 @@
 </head>
 <body>
 <?php include 'top.php';?><br><br>
-<div class="center">
-<p>
-<a href=inquiry.php>お問い合わせ</a>
-<a href=shopinfo.php>店舗情報</a>
-<a href=policy.php>利用規約</a>
-</p>
-</div>
+<h1>店舗情報</h1>
+
 </body>
 </html>
