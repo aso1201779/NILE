@@ -39,13 +39,86 @@ th, td{
 	color:#c44;
 }
 
-#menu {
+#top {
 	padding: 0px;
 	top: auto;
 	left: auto;
 	right: auto;
 	bottom: auto;
 	margin: 0px;
+}
+#top ul {
+	padding: 0px;
+	margin: 0px;
+}
+
+#top ul li{
+	float: left;
+	width: 14.2%;
+	height: 60px;
+	list-style-type: none;
+	text-align: center;
+	background-color: #FFF;
+	padding: 0px;
+	margin: 0px;
+	display: block;
+}
+#top ul li a {
+	font-size: 10px;
+	text-decoration: none;
+	color: #000;
+	display: block;
+}
+
+#icon{
+	float:left;
+	height: 80px;
+	width: 100px;
+	margin-left: 20px;
+}
+
+#search {
+	height:80px;
+	width: 300px;
+	margin-left: 10;
+	margin-right: 10;
+}
+
+#etc{
+	float: right;
+	width:200px;
+	margin-right: 20px;
+}
+
+#etc ul{
+	madding: 0px;
+	margin: 0px
+}
+
+#etc ul li{
+	float: right;
+	width: 20%;
+	height: 80px;
+	list-style-type: none;
+	text-align: cener;
+	padding: 0px;
+	margin: 0px;
+	display:block;
+}
+
+#etc ul li a{
+	font-size: 10px;
+	text-decoration: none;
+	color:#000;
+	display: block;
+}
+#menu {
+	padding: 0px;
+	top: auto;
+	left: auto;
+	right: auto;
+	bottom: auto;
+	margin-top: 80px;
 }
 #menu ul {
 	padding: 0px;
