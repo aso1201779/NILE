@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="nile.css">
 </head>
 <body>
+<div class="body">
 <div id="left">
     <div id="icon">
     	<a href="index.php"><img src="image/nile.png"></a>
@@ -34,6 +35,7 @@
 		<li><a href="#">Basketball</a></li>
 		<li><a href="#">Tennis</a></li>
 	</ul>
+</div>
 </div>
 </body>
 </html>

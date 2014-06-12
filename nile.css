@@ -40,15 +40,16 @@ th, td{
 }
 
 #left{
-	height: 75px;
+	height: 79px;
 	width: 800px;
 	float:left;
 	margin-left: 20px;
 	margin-bottom:20px;
+	display: block;
 }
 #icon{
 	float:left;
-	width: 80px;
+	width: 90px;
 }
 
 #search {
@@ -64,7 +65,7 @@ th, td{
 }
 
 #right{
-	height: 60px;
+	height: 79px;
 	width: 350px;
 	float: right;
 	margin-right: 20px;
