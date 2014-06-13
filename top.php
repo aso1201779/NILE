@@ -8,7 +8,7 @@
 <div class="body">
 <div id="left">
     <div id="icon">
-    	<a href="index.php"><img src="image/nile.png"></a>
+    	<a href="index.php"><img src="image/nile.png" border="0"></a>
     </div>
     <div id="search">
             <form method="get" action="search.php">
@@ -20,11 +20,11 @@
 </div>
 <div id="right">
 	<ul>
-	  <li><a href="coin.php"><img src="image/coin.png"><br>コイン</a></li>
-	  <li><a href="productinfo.php"><img src="image/会員情報.png"><br>会員情報</a></li>
-	  <li><a href="cart.php"><img src="image/カート.jpg"><br>カート</a></li>
-	  <li><a href="buyhis.php"><img src="image/購入履歴.jpg"><br>購入履歴</a></li>
-	  <li><a href="help.php"><img src="image/help.jpg"><br>ヘルプ</a></li>
+	  <li><a href="coin.php"><img src="image/coin.png" border="0"><br>コイン</a></li>
+	  <li><a href="productinfo.php"><img src="image/会員情報.png" border="0"><br>会員情報</a></li>
+	  <li><a href="cart.php"><img src="image/カート.jpg" border="0"><br>カート</a></li>
+	  <li><a href="buyhis.php"><img src="image/購入履歴.jpg" border="0"><br>購入履歴</a></li>
+	  <li><a href="help.php"><img src="image/help.jpg" border="0"><br>ヘルプ</a></li>
 	</ul>
 </div>
 
