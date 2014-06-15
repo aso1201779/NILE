@@ -12,7 +12,13 @@
     </div>
     <div id="search">
             <form method="get" action="search.php">
-            <input type="text" id="searchform" name="search" />
+            <input type="search" id="searchform" name="searchform" placeholder="何をお探しですか？" list="data1" />
+            <datalist id="data1">
+            	<option value="野球"></option>
+            	<option value="サッカー"></option>
+            	<option value="バスケットボール"></option>
+            	<option value="テニス"></option>
+            </datalist>
             <input type="submit" name="submit" value="検索" />
             <input type="image" src="image/search.png" alt="検索する" />
             </form>
@@ -27,15 +33,38 @@
 	  <li><a href="help.php"><img src="image/help.jpg" border="0"><br>ヘルプ</a></li>
 	</ul>
 </div>
-
-<div id="menu">
-	<ul>
-		<li><a href="#">Baseball</a></li>
-		<li><a href="#">Soccer</a></li>
-		<li><a href="#">Basketball</a></li>
-		<li><a href="#">Tennis</a></li>
-	</ul>
-</div>
+<br><br><br><br>
+<ul id="dropmenu">
+	<li><a href="#">Baseball</a>
+		<ul>
+			<li><a href="#">スパイク</a></li>
+			<li><a href="#">バット</a></li>
+			<li><a href="#">グローブ</a></li>
+			<li><a href="#">ボール</a></li>
+		</ul>
+	</li>
+	<li><a href="#">Soccer</a>
+		<ul>
+			<li><a href="#">スパイク</a></li>
+			<li><a href="#">ユニフォーム</a></li>
+			<li><a href="#">ボール</a></li>
+		</ul>
+	</li>
+	<li><a href="#">Basketball</a>
+		<ul>
+			<li><a href="#">シューズ</a></li>
+			<li><a href="#">トップス</a></li>
+			<li><a href="#">ハーフパンツ</a></li>
+		</ul>
+	</li>
+	<li><a href="#">Tennis</a>
+		<ul>
+			<li><a href="#">シューズ</a></li>
+			<li><a href="#">ラケット</a></li>
+			<li><a href="#">ボール</a></li>
+		</ul>
+	</li>
+</ul>
 </div>
 </body>
 </html>

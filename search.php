@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="nile.css">
 </head>
 <body>
+<?php include 'top.php';?>
 <h1>検索ページ</h1>
 
 </body>
