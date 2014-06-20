@@ -5,19 +5,22 @@
 <title>NILE</title>
 <link rel="stylesheet" href="nile.css">
 </head>
-<body>
+<body onload="Gazou2()">
 <?php include 'top.php';?>
-<h1>商品選択後ページ</h1>
 <div class="center">
 <?php
 $id = $_GET['id'];
 $name = $_GET['name'];
 
 ?>
+<br><br>
 <ul id="productoption">
 	<li><?php echo $id?></li>
 	<li><?php echo $name?></li>
 </ul>
+<div class="clear"></div>
+<?php include 'imgscript.php';?>
+
 </div>
 </body>
 </html>

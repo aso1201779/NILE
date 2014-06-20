@@ -45,6 +45,10 @@ h2{
 	width: 850px;
 }
 
+.clear{
+	clear:both;
+}
+
 #left{
 	height: 79px;
 	width: 800px;
@@ -175,15 +179,14 @@ h2{
   border-radius: 0 0 3px 3px;
 }
 #productoption{
+	display: inline-block;
 	list-style-type: none;
-	width:1280px;
+	width:200px;
 	height:37px;
 }
 #productoption li{
-	width: 200px;
 	margin-bottom: 13px;
 	padding: 4px 0 3px;
-	text-align: center;
 	background: #fff;
 	color: #000;
 	font-size: 25px;

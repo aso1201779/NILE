@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<link rel="stylesheet" href="nile.css">
-</head>
-<body>
-<div class="body">
+
 <div id="left">
     <div id="icon">
     	<a href="index.php"><img src="image/nile.png" border="0"></a>
@@ -33,38 +26,4 @@
 	  <li><a href="help.php"><img src="image/help.jpg" border="0"><br>ヘルプ</a></li>
 	</ul>
 </div>
-<br><br><br><br>
-<ul id="dropmenu">
-	<li><a href="productoption.php?id=Baseball&name=　">Baseball</a>
-		<ul>
-			<li><a href="productoption.php?id=Baseball&name=スパイク">スパイク</a></li>
-			<li><a href="productoption.php?id=Baseball&name=バット">バット</a></li>
-			<li><a href="productoption.php?id=Baseball&name=グローブ">グローブ</a></li>
-			<li><a href="productoption.php?id=Baseball&name=ボール">ボール</a></li>
-		</ul>
-	</li>
-	<li><a href="productoption.php?id=Soccer&name=　">Soccer</a>
-		<ul>
-			<li><a href="productoption.php?id=Soccer&name=スパイク">スパイク</a></li>
-			<li><a href="productoption.php?id=Soccer&name=ユニフォーム">ユニフォーム</a></li>
-			<li><a href="productoption.php?id=Soccer&name=ボール">ボール</a></li>
-		</ul>
-	</li>
-	<li><a href="productoption.php?id=Basketball&name=　">Basketball</a>
-		<ul>
-			<li><a href="productoption.php?id=Basketball&name=シューズ">シューズ</a></li>
-			<li><a href="productoption.php?id=Basketball&name=トップス">トップス</a></li>
-			<li><a href="productoption.php?id=Basketball&name=ハーフパンツ">ハーフパンツ</a></li>
-		</ul>
-	</li>
-	<li><a href="productoption.php?id=Tennis&name=　">Tennis</a>
-		<ul>
-			<li><a href="productoption.php?id=Tennis&name=シューズ">シューズ</a></li>
-			<li><a href="productoption.php?id=Tennis&name=ラケット">ラケット</a></li>
-			<li><a href="productoption.php?id=Tennis&name=ボール">ボール</a></li>
-		</ul>
-	</li>
-</ul>
-</div>
-</body>
-</html>
+<div class="clear"></div>
