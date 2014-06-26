@@ -21,7 +21,7 @@
 　　　あたりを引くと非売品！Nileの商品が当たります！<br>
 </div>
 <div style="float:left;width:340px;">
-<a href="gacha.php" ><img src="image/gacha1.jpg" alt="がちゃる" onMouseDown="this.src='image/gacha2.jpg';" border="0"></a>
+<a href="omikuji.html" ><img src="image/gacha1.jpg" alt="がちゃる" onMouseDown="this.src='image/gacha2.jpg';" border="0"></a>
 </div>
 </div>
 </div>

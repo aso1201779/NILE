@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>NILE</title>
+<link rel="stylesheet" href="nile.css">
+</head>
+<body>
+
+<div class="omikujibase">
+    <p id="KujiRes" class="kRes">？？</p>
+    <p id="KujiCom" class="kCom">＊＊＊</p>
+ </div>
+
+ <p class="button"><input type="button" value="おみくじを引く" onclick="ring(); disabled = true;"></p>
+<audio id="OmikujiSound" preload="auto">
+	<source src="dram.mp3" type="audio/mp3">
+	<p>※お使いのブラウザは音はなりません</p>
+</audio>
+<script type="text/javascript"><!--
+mres = new Array();
+ mcom = new Array();
+img = new Array();
+var kuji = Math.floor(Math.random()*mres.length);
+// おみくじの結果とコメント集
+mres[0] = 'あたり';
+mres[1] = 'あたり';
+mres[2] = 'あたり';
+mres[3] = 'あたり';
+mres[4] = 'はずれ';
+mcom[0] = 'ユニフォームが当たりました';
+mcom[1] = 'ドリンクが当たりました';
+mcom[2] = 'スパイクが当たりました';
+mcom[3] = 'キーホルダーが当たりました';
+mcom[4] = 'またチャレンジしてね';
+img[0] = "image/gacha/uniform.jpg";
+img[1] = "image/gacha/drink.png";
+img[2] = "image/gacha/spaik.png";
+img[3] = "image/gacha/key.jpg";
+img[4] = "image/gacha/hazure.png";
+
+
+
+
+
+// 関数
+function ShowKuji(kRes,kCom) {
+    // くじを選ぶ
+
+    // くじを表示
+   document.getElementById(kRes).innerHTML = mres[kuji];
+    document.getElementById(kCom).innerHTML = mcom[kuji];
+    setTimeout("gazou()",3000);
+ }
+
+function ring(){
+		document.getElementById("OmikujiSound").play();
+		ShowKuji( 'KujiRes', 'KujiCom' );
+
+
+
+}
+function gazou(){
+ 	document.write("<img src='"+img[kuji]+"' border='0'>");
+}
+
+
+
+
+ // --></script>
+
+<style type="text/css"><!--
+div.omikujibase {
+    /* 画像を表示 */
+    background-image: url("image/gacha/docplate.jpg");
+    background-repeat: no-repeat;
+    background-position: top left;
+    /* 画像のサイズに合わせる */
+    width: 149px;
+    height: 139px;
+    /* 行間を詰める */
+    line-height: 1.2;
+ }
+ div.omikujibase p.kRes {
+    /* くじの結果 */
+    margin: 0px;
+    padding: 5px 0px 0px 5px;
+    font-size: 16pt;
+ }
+ div.omikujibase p.kCom {
+    /* くじのコメント */
+    margin: 0px;
+    padding: 5px 50px 0px 0px;
+    font-size: 6pt;
+ }
+ p.button {
+    /* ボタンの表示 */
+    width: 149px;
+    margin: 5px 0px;
+    text-align: center;
+ }
+ --></style>
+ </body>
+</html>

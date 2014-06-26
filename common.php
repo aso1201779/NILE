@@ -3,7 +3,7 @@
 	session_regenerate_id(true);  //sessionハイジャック防止
 
 	function connect(){
-		return new PDO("mysql:dbname=sample","root","nile");
+		return new PDO("mysql:dbname=nile","root","nile");
 	}
 
 /*	function img_tag($code){

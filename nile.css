@@ -75,7 +75,7 @@ h2{
 
 #right{
 	height: 79px;
-	width: 350px;
+	width: 400px;
 	float: right;
 	margin-right: 20px;
 }
@@ -87,7 +87,7 @@ h2{
 
 #right ul li{
 	float: left;
-	width: 20%;
+	width: 16.4%;
 	list-style-type: none;
 	text-align: center;
 	padding: 0px;
@@ -181,6 +181,7 @@ h2{
 #productoption{
 	display: inline-block;
 	list-style-type: none;
+	margin-bottom: 60px;
 	width:200px;
 	height:37px;
 }

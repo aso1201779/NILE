@@ -7,7 +7,7 @@
 </head>
 <body>
 <?php include 'top.php';?>
-<h1>ガチャのページ</h1>
+<h1>商品詳細ページ</h1>
 
 </body>
 </html>
