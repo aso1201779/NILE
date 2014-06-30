@@ -27,11 +27,12 @@
 <div class="clear"></div>
 </div>
 
-<div class="item_list">
+<div class="item_list" >
 <form method="post" action="cart.php" name="DEF_Fgoodslist">
 <!++++++++++ ▼商品表示　start ++++++++++>
-<table width="100%" border="0" cellspacing="1" cellpadding="4">
-	<?php foreach ($product as $p){ ?>
+<?php foreach ($product as $p){ ?>
+<table width="100%" height="150px" cellspacing="1" cellpadding="4">
+
 	<!--   ◆商品counter No.= (No.1)  -->
 	<tr bgcolor="#FFFFFF">
 	  <td align="center" valign="top" rowspan="3" width="20%" style="padding:5px">
@@ -39,7 +40,7 @@
 			<b></b></font>
 	  <!--【商品画像（サムネイル）】-->
 			<a id="thumb1" href="./ynx-sht-12f-227-1[1].jpg" alt="" class="highslide" onclick="return hs.expand(this)">
-			<img style="width:80px;border:1 solid;" src="ynx-sht-12f-227-1[1].jpg"  pbshowcaption="false" /></a>
+			<img style="width:150px;border:1 solid;" src=<?php echo img_tag($p['product_code']) ?>  pbshowcaption="false" /></a>
 			<div class="highslide-caption"></div>
 		</td>
 	  <td valign="top" width="90%">
@@ -56,11 +57,11 @@
 	    <!--【商品コード】-->
 			<a href="./highslide/index.htm" onclick="return hs.htmlExpand(this)"><?php echo $p['product_code'] ?></a>
 		<div class="highslide-maincontent" style="text-align:left;margin-left:20px;widh:200px;">
-			<h4>商品コード：<br><br><br>シューズ | ヨネックス<br><br></h4><br></div><br>
+			商品コード：<?php echo $p['product_code'] ?>
 	    <!--【メーカー名】-->
 			<?php echo $p['meika_kubun_name'] ?><br>
 	    <!--【商品名】-->
-			<?php echo $p['product_name'] ?>
+			<?php echo $p['product_name'] ?></div>
 	    </b>
 		</td>
 	  <td valign="top" align="right" nowrap width="10%">
@@ -72,6 +73,7 @@
 	<tr bgcolor="#FFFFFF">
 	  <td valign="top" colspan="1" style="width:90%;font-size:12px;">
 			<!--【商品説明１（先頭100文字分、HTMLタグ無効）】-->
+			商品説明<br>　　<?php echo $p['comment'] ?>
 	    <!--商品属性1：0【商品属性1】1～20まで使用可-->
 	  </td>
 		<td align="center">
@@ -83,26 +85,27 @@
 	<span style="float:right; color:red;"></span>
 	  </td>
 	</tr>
-	<tr bgcolor="#FFFFFF">
-	  <td height="5" colspan="3" align="center">
-	  </td>
-	</tr>
-	<?php }?>
 </table>
+<Hr>
+<?php }?>
 </form>
 </div>
 
 <div class="left">
 <ul><h3>メーカー別</h3>
-	<li><a href="#"></a>メーカー名</li>
+	<?php foreach ($meika as $m){ ?>
+		<li><a href="#"><?php echo $m['meika_kubun_name'] ?></a></li>
+	<?php }?>
 </ul>
 <ul><h3>ランキング別</h3>
 	<li><a href="#"></a>製品名</li>
 </ul>
 </div>
 <div class="left">
-<ul><h3><?php echo $_GET['id']?></h3>
-	<li><a href="#"></a>その他の種類</li>
+<ul><h3><?php echo $_GET['id']?>のその他の商品</h3>
+	<?php foreach ($etcpr as $ep){ ?>
+		<li><a href="#"><?php echo $ep['product_kubun_name'] ?></a></li>
+	<?php }?>
 </ul>
 </div>
 </body>

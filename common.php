@@ -3,12 +3,12 @@
 	session_regenerate_id(true);  //sessionハイジャック防止
 
 	function connect(){
-		return new PDO("mysql:dbname=nile","root","nile");
+		return new PDO("mysql:host=127.0.0.1;dbname=nile","root","nile");
 	}
 
-/*	function img_tag($code){
-		if(file_exists("images/$code.jpg")) $name = $code;
+	function img_tag($code){
+		if(file_exists("image/product/$code.jpg")) $name = $code;
 		else $name = 'noimage';
-		return '<img src="images/' . $name . '.jpg" alt="">';
-	} */
+		return 'image/product/' . $name . '.jpg';
+	}
 ?>
