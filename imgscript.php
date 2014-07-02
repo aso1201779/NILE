@@ -24,3 +24,4 @@ function Gazou(mysrc){
 <INPUT type="radio" name="myRB" onClick="Gazou('image/tokusyu/basketball.jpg')">
 <INPUT type="radio" name="myRB" onClick="Gazou('image/tokusyu/tennis.jpg')">
 </FORM>
+</div>

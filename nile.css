@@ -66,11 +66,17 @@ h2{
 	float: right;
 	width: 500px;
 	line-height: 75px;
+	position: relative;
 }
 
 #searchform{
-	width: 400px;
-	height: 20px;
+	width: 600px;
+	height: 25px;
+}
+#searchimage{
+	position: absolute;
+	top:25%;
+	magin-top: 10px;
 }
 
 #right{
@@ -151,7 +157,7 @@ h2{
 	transition: .2s;
 }
 #dropmenu li ul li a{
-	padding: 12.5px 45px 12.5px 15px;
+	padding: 12.5px 69px 12.5px 15px;
 	background: #00aaee;
 	text-align: left;
 	font-size: 15px;

@@ -5,9 +5,8 @@
     </div>
     <div id="search">
             <form method="get" action="search.php">
-            <input type="text" id="searchform" name="searchform" placeholder="何をお探しですか？" list="data1" />
-            <input type="submit" name="btn" value="検索" />
-            <input type="image" src="image/search.png" alt="検索する" />
+            <input type="text" id="searchform" name="searchform" placeholder="何をお探しですか？" />
+            <input type="image" id="searchimage" src="image/search.png" alt="検索する" />
             </form>
     </div>
 </div>

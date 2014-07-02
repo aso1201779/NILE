@@ -6,15 +6,20 @@
 <link rel="stylesheet" href="nile.css">
 </head>
 <body>
-<?php include 'top.php';?>
+<?php include 'top.php';
+require ('common.php');
+$pdo = connect();
+$point = $pdo->query("select point from customer where customer_code = {$session['']}");
+$gacha = $point / 300;
+?>
 <h1>ポイント</h1>
 <br><br>
 <div class="center">
 <div class="centerLeft">
 <div style="float:left;width:500px; font-size:17px;">
-　　　あなたのポイントは　　　ptです<br>
+　　　あなたのポイントは　<?php echo $point ?>ptです<br>
 <br>
-　　　ガチャが　　　回引けます<br>
+　　　ガチャが　<?php $gacha ?>回引けます<br>
 <br>
 　　　１ポイントで１円の割引になります。<br>
 　　　３００ポイントでガチャが引けます。<br>

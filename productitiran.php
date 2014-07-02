@@ -16,10 +16,7 @@
 <!--   << body start >>  -->
 <body>
 <div class="center">
-<?php
-
-		include 'top.php';
-?>
+<?php	include 'top.php';?>
 <ul id="productoption">
 	<li><?php echo $_GET['id']?></li>
 	<li><?php echo $_GET['name']?></li>
@@ -57,7 +54,7 @@
 	    <!--【商品コード】-->
 			<a href="./highslide/index.htm" onclick="return hs.htmlExpand(this)"><?php echo $p['product_code'] ?></a>
 		<div class="highslide-maincontent" style="text-align:left;margin-left:20px;widh:200px;">
-			商品コード：<?php echo $p['product_code'] ?>
+			商品コード：<?php echo $p['product_code'] ?><br>
 	    <!--【メーカー名】-->
 			<?php echo $p['meika_kubun_name'] ?><br>
 	    <!--【商品名】-->
@@ -104,7 +101,7 @@
 <div class="left">
 <ul><h3><?php echo $_GET['id']?>のその他の商品</h3>
 	<?php foreach ($etcpr as $ep){ ?>
-		<li><a href="#"><?php echo $ep['product_kubun_name'] ?></a></li>
+		<li><a href="productoption.php?code=<?php echo $_GET['code']?>&kubun=<?php echo $ep['product_kubun_code']?>&id=<?php echo $_GET['id']?>&name=<?php echo $ep['product_kubun_name'] ?>"><?php echo $ep['product_kubun_name'] ?></a></li>
 	<?php }?>
 </ul>
 </div>
