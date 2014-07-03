@@ -51,7 +51,7 @@ h2{
 
 #left{
 	height: 79px;
-	width: 800px;
+	width: 770px;
 	float:left;
 	margin-left: 20px;
 	display: block;
@@ -81,7 +81,7 @@ h2{
 
 #right{
 	height: 79px;
-	width: 400px;
+	width: 430px;
 	float: right;
 	margin-right: 20px;
 }
@@ -92,8 +92,8 @@ h2{
 }
 
 #right ul li{
-	float: left;
-	width: 16.4%;
+	float: right;
+	width: 55px;
 	list-style-type: none;
 	text-align: center;
 	padding: 0px;

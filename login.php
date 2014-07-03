@@ -21,17 +21,18 @@ $result = mysql_query('SELECT * FROM customer ', $conn);
 	while($rows = mysql_fetch_array($result))
 
 //もしもログインボタンが押されたら
-if (isset($_POST["login"])) {
+if (isset($_POST['login'])) {
 
-	if ($_POST["user_id"] == $rows['user_id'] && $_POST["password"] == $rows['password'] ){
+	if ($_POST['user_id'] == $rows['user_id'] && $_POST['password'] == $rows['password'] ){
 		session_regenerate_id(TRUE);
-$_SESSION["user_id"] = $_rows["user_id"];
+		$_SESSION['user_id'] = $rows['user_id'];
+		$_SESSION['user_name'] = $rows['customer_name'];
 
-header("Location: http://localhost/NILE/main.php");
- exit;
- 		}else {
+		header("Location: http://localhost/NILE/main.php");
+ 		exit;
+ 	}else {
       			$error_Message = 'ユーザIDまたはパスワードに誤りがあります。';
-			}
+	}
 
 }
   mysql_close($conn);
@@ -69,8 +70,8 @@ header("Location: http://localhost/NILE/main.php");
 
   </fieldset>
   </form>
+</table></div></form>
 
-
-    </body>
+</body>
 </html>
 

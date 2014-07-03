@@ -9,6 +9,7 @@
 
 <?php include 'top.php';?>
 <h1>利用規約</h1>
+<br><br>
 <div class="center">
 <div class="centerLeft">
 <h3>1.規約への同意<br></h3>

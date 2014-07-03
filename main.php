@@ -6,7 +6,6 @@
 <link rel="stylesheet" href="nile.css">
 </head>
 <body onload="Gazou2()">
-
 <?php include 'top.php';?>
 <?php include 'dropmenu.php';?>
 <div class="center">
