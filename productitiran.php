@@ -46,7 +46,7 @@
 	  </td>
 	  <td valign="top" nowrap align="right" width="10%">
 	    <!--【在庫数】-->
-			在庫：<?php echo $p['stock'] ?>台
+			在庫：<?php echo $p['stock'] ?>
 	  </td>
 	</tr>
 	<tr bgcolor="#FFFFFF">
@@ -74,10 +74,7 @@
 	    <!--商品属性1：0【商品属性1】1～20まで使用可-->
 	  </td>
 		<td align="center">
-			<input type="image" src="image/カート2.jpg" alt="カートに入れる" onclick="CartIn('DEF_Fgoodslist','r_gcode','N0012')" />
-	<select name="r_gquant[{$p['product_code']}]">
-		<option value="1">1</option>
-	</select>
+			<input type="image" src="image/syosai.jpg" alt="詳細を見る" onclick="CartIn('DEF_Fgoodslist','r_gcode','N0012')" />
 
 	<span style="float:right; color:red;"></span>
 	  </td>

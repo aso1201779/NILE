@@ -9,15 +9,15 @@
 <?php include 'top.php';
 require ('common.php');
 $pdo = connect();
-$point = $pdo->query("select point from customer where customer_code = {$session['']}");
-$gacha = $point / 300;
+$point = $pdo->query("select point from customer where user_id = {$_SESSION["user_id"]}");
+$gacha = $point['point'] / 300;
 ?>
 <h1>ポイント</h1>
 <br><br>
 <div class="center">
 <div class="centerLeft">
 <div style="float:left;width:500px; font-size:17px;">
-　　　あなたのポイントは　<?php echo $point ?>ptです<br>
+　　　あなたのポイントは　<?php echo $point['point'] ?>ptです<br>
 <br>
 　　　ガチャが　<?php $gacha ?>回引けます<br>
 <br>

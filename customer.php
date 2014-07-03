@@ -23,7 +23,7 @@
 <body onload="Gazou2()">
 <div class="center">
 <?php	include 'top.php';?>
-
+</div>
 <table>
 
 <tr>
@@ -39,6 +39,10 @@
 	    <br>
 		<td valign="top" align="right" nowrap width="10%">
 		<input type="image" src="image/カート2.jpg" alt="カートに入れる" onclick="CartIn('DEF_Fgoodslist','r_gcode','N0012')" />
+		<select name="r_gquant[{$p['product_code']}]">
+			<option value="1">1</option>
+		</select>
+
 </tr>
 <tr bgcolor="#FFFFFF">
   <td height="5" colspan="3" align="center">
@@ -97,10 +101,7 @@ var tab = {
 
 </script>
 <style type="text/css">
-* {
-	margin:0;
-	padding:0
-}
+
 img {
 	border:0
 }
@@ -235,6 +236,5 @@ if( isset( $_POST[ 'test1' ] ) ){
 <br>
 
 この商品を買った人はこれも買っています
-</div>
 </body>
 </html>
