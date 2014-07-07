@@ -7,7 +7,7 @@
 </head>
 <body>
 
-<?php include 'top.php';?>
+<?php include 'common.php';include 'top.php';?>
 <h1>Pay-easy（ペイジー）とは？</h1>
 <br><br>
 <div class="center">

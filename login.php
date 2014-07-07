@@ -28,7 +28,7 @@ if (isset($_POST['login'])) {
 		$_SESSION['user_id'] = $rows['user_id'];
 		$_SESSION['user_name'] = $rows['customer_name'];
 
-		header("Location: http://localhost/NILE/main.php");
+		header("Location: http://localhost/NILE/index.php");
  		exit;
  	}else {
       			$error_Message = 'ユーザIDまたはパスワードに誤りがあります。';
@@ -40,36 +40,32 @@ if (isset($_POST['login'])) {
 
 
 <html>
-    <head>
-
-        <meta charset="UTF-8">
-        <title>ログイン画面</title>
-
-    </head>
+	<head><meta charset="UTF-8">
+		<title>NILE</title>
+		<link rel="stylesheet" href="nile.css">
+	</head>
     <body bgcolor="#f0fff4">
-<form action="login.php" method="POST">
+	<form action="login.php" method="POST">
 
-    <h1><img src="image/nile.png" alt="nile">会員ページにログイン</h1>
+    <h1><a href="index.php"><img src="image/nile.png" alt="nile" border="0"></a>会員ページにログイン</h1>
         <hr>
         <div align="center">
             <table border="0">
             <fieldset>
-  <center>ユーザIDとパスワードを入力してください
-  <br><br>
+				<div class="center">ユーザIDとパスワードを入力してください
+				<br><br>
 
-  ユーザID:<input type="text" id="user_id" name="user_id" value="">
-  <br><br><br>
-  パスワード:<input type="password" id="password" name="password" value="">
-  <br><br>
-  <div><h2><FONT COLOR="RED"><?php echo $error_Message; ?></FONT></h2></div>
-
-
-  <input type="submit" id="login" name="login" value="ログイン">
-  </center>
+				ユーザID:<input type="text" id="user_id" name="user_id" value="">
+				<br><br><br>
+				パスワード:<input type="password" id="password" name="password" value="">
+				<br><br>
+				<div><h2><FONT COLOR="RED"><?php echo $error_Message; ?></FONT></h2></div>
 
 
-  </fieldset>
-  </form>
+				<input type="submit" id="login" name="login" value="ログイン">
+				</div>
+  			</fieldset>
+
 </table></div></form>
 
 </body>

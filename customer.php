@@ -22,7 +22,8 @@
 </head>
 <body onload="Gazou2()">
 <div class="center">
-<?php	include 'top.php';?>
+<?php	include 'common.php';
+include 'top.php';?>
 </div>
 <table>
 

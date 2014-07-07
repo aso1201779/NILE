@@ -1,5 +1,5 @@
 <?php
-	require 'common.php';
+include 'common.php';
 	$pdo = connect();
 	$pr = $pdo->query("SELECT product_code,product_name,tanka,product_kubun_name,meika_kubun_name,genre_kubun_name,stock,comment
 						FROM product left outer join product_kubun on product.product_kubun = product_kubun.product_kubun_code

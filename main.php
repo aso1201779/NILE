@@ -6,7 +6,8 @@
 <link rel="stylesheet" href="nile.css">
 </head>
 <body onload="Gazou2()">
-<?php include 'top.php';?>
+<?php include 'common.php';
+include 'top.php';?>
 <?php include 'dropmenu.php';?>
 <div class="center">
 <?php include 'imgscript.php';?>

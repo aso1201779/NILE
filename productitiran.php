@@ -16,7 +16,7 @@
 <!--   << body start >>  -->
 <body>
 <div class="center">
-<?php	include 'top.php';?>
+<?php include 'top.php';?>
 <ul id="productoption">
 	<li><?php echo $_GET['id']?></li>
 	<li><?php echo $_GET['name']?></li>

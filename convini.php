@@ -7,7 +7,8 @@
 <link rel="stylesheet" href="nile.css">
 </head>
 <body>
-<?php include 'top.php';?>
+<?php include 'common.php';
+include 'top.php';?>
 <h1>コンビニで支払い</h1>
 
 <div class="center">

@@ -1,5 +1,4 @@
 <?php
-include 'common.php';
 if(!isset($_SESSION['user_id'])) { ?>
 		<div id="left">
 		    <div id="icon">
