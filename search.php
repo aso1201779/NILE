@@ -41,7 +41,7 @@ if (@$_GET['searchform'] != null){
 						OR genre_kubun_name LIKE \"%{$value}%\" OR product_kubun_name LIKE \"%{$value}%\"");
 		$search = $st->fetchAll();
 			?><div class="item_list">
-				<form method="post" action="cart.php" name="DEF_Fgoodslist">
+				<form method="post" action="customer.php" name="DEF_Fgoodslist">
 				<!++++++++++ ▼商品表示　start ++++++++++>
 				<?php foreach ($search as $s){ ?>
 				<table width="100%" height="150px" cellspacing="1" cellpadding="4">

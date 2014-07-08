@@ -25,7 +25,7 @@
 </div>
 
 <div class="item_list" >
-<form method="post" action="cart.php" name="DEF_Fgoodslist">
+<form method="post" action="customer.php" name="DEF_Fgoodslist">
 <!++++++++++ ▼商品表示　start ++++++++++>
 <?php foreach ($product as $p){ ?>
 <table width="100%" height="150px" cellspacing="1" cellpadding="4">
@@ -74,9 +74,14 @@
 	    <!--商品属性1：0【商品属性1】1～20まで使用可-->
 	  </td>
 		<td align="center">
-			<input type="image" src="image/syosai.jpg" alt="詳細を見る" onclick="CartIn('DEF_Fgoodslist','r_gcode','N0012')" />
+			<input type="hidden" name="product_name" value="<?php $p['product_name'];?>" />
+			<input type="hidden" name="tanka" value="<?php $p['tanka'];?>" />
+			<input type="hidden" name="comment" value="<?php $p['comment'];?>" />
+			<input type="hidden" name="stock" value="<?php $p['stock'];?>" />
 
-	<span style="float:right; color:red;"></span>
+			<input type="image" src="image/syosai.jpg" alt="詳細を見る" />
+
+			<span style="float:right; color:red;"></span>
 	  </td>
 	</tr>
 </table>

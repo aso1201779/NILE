@@ -15,10 +15,6 @@
 <link rel="stylesheet" type="text/css" href="http://isys.jpn.ph/home_test/highslide/highslide/highslide.css" />
 <script type="text/javascript" src="http://isys.jpn.ph/home_test/highslide/highslide/highslide-with-html.js"></script>
 <script type="text/javascript" src="http://isys.jpn.ph/home_test/highslide/highslide/highslide.js"></script>
-
-
-
-</SCRIPT>
 </head>
 <body onload="Gazou2()">
 <div class="center">
@@ -235,7 +231,40 @@ if( isset( $_POST[ 'test1' ] ) ){
 </div>
 <br>
 <br>
+<div class="clear"></div>
 
 この商品を買った人はこれも買っています
+
+<h2>オススメ商品</h2>
+<div class="item_list">
+<div class="item">
+<div class="name"><a href="/ca5/3/p-r-s/?style=custam">ホカ弁</a></div>
+<a href="/ca5/3/p-r-s/?style=custam"><img style="width:180px;" src="PROHOLD TOUR Z AC（プロホールドツアー Z AC）DPSZA8.jpg" alt="TY-02" border="0"></a>
+<div class="other">価格：<b>3,560円</b></div>
+</div>
+</div>
+<div class="item_list">
+<div class="item">
+<div class="name"><a href="/ca5/5/p-r-s/?style=custam">ホカ弁2</a></div>
+<a href="/ca5/5/p-r-s/?style=custam"><img style="width:180px;" src="YONEX(ヨネックス)【POWER CUSHION .png" alt="SA-03" border="0"></a>
+<div class="other">価格：<b>2,350円</b></div>
+</div>
+</div>
+<div class="item_list">
+<div class="item">
+<div class="name"><a href="/ca2/9/p-r-s/?style=custam">ホカ弁3</a></div>
+<a href="/ca2/9/p-r-s/?style=custam"><img style="width:180px;" src="YONEX(ヨネックス)【POWER CUSHION 161LT（パワークッション161LT） SHT161LT.jpg" alt="アロマオイル" border="0"></a>
+<div class="other">価格：<b>780円</b></div>
+</div>
+</div>
+<br style="clear: both"><div class="item_list">
+<div class="item">
+<div class="name"><a href="/ca4/10/p-r-s/?style=custam">かえる置物</a></div>
+<a href="/ca4/10/p-r-s/?style=custam"><img style="width:180px;" src="パワ-クッション ワイド 1002 SHT1002W115.jpg" alt="かえる置物" border="0"></a>
+<div class="other">価格：<b>5,670円</b></div>
+</div>
+</div>
+<div class="clear"></div>
+<br><br><br>
 </body>
 </html>

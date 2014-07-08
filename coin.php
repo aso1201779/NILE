@@ -19,7 +19,7 @@ if(!$db){
 }else{
 	$point = $row['point'];
 }
-$gacha = $point / 300;
+$gacha = floor(intval($point) / 300);
 ?>
 <h1>ポイント</h1>
 <br><br>
@@ -28,14 +28,14 @@ $gacha = $point / 300;
 <div style="float:left;width:500px; font-size:17px;">
 　　　あなたのポイントは　<?php echo  $point; ?>ptです<br>
 <br>
-　　　ガチャが　<?php $gacha; ?>回引けます<br>
+　　　ガチャが　<?php echo $gacha ?>回引けます<br>
 <br>
 　　　１ポイントで１円の割引になります。<br>
 　　　３００ポイントでガチャが引けます。<br>
 　　　あたりを引くと非売品！Nileの商品が当たります！<br>
 </div>
 <div style="float:left;width:340px;">
-<a href="omikuji.html" ><img src="image/gacha1.jpg" alt="がちゃる" onMouseDown="this.src='image/gacha2.jpg';" border="0"></a>
+<a href="omikuji.html" onclick="location.replace('omikuji.html'); return false;"><img src="image/gacha1.jpg" alt="がちゃる" onMouseDown="this.src='image/gacha2.jpg';" border="0"></a>
 </div>
 </div>
 </div>
