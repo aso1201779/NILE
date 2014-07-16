@@ -15,7 +15,6 @@ include 'top.php';?>
 <br><br>
 <p>
 <a href=inquiry.php>お問い合わせ</a>
-<a href=shopinfo.php>店舗情報</a>
 <a href=policy.php>利用規約</a>
 </p>
 </div>

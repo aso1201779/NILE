@@ -6,8 +6,7 @@
 <link rel="stylesheet" href="nile.css">
 </head>
 <body>
-<?php include 'common.php';
-include 'top.php';?>
+<?php include 'top2.php';?>
 <h1>お問い合わせ</h1>
 <div class="center">
 <div style="text-align:left;width:400px;margin-left:auto;margin-right:auto;">

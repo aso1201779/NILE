@@ -8,6 +8,6 @@
 	function img_tag($code){
 		if(file_exists("image/product/$code.jpg")) $name = $code;
 		else $name = 'noimage';
-		return 'image/product/' . $name . '.jpg';
+		return 'image/product/' . $name;
 	}
 ?>

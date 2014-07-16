@@ -17,45 +17,57 @@
 <script type="text/javascript" src="http://isys.jpn.ph/home_test/highslide/highslide/highslide.js"></script>
 </head>
 <body onload="Gazou2()">
-<div class="center">
 <?php	include 'common.php';
 include 'top.php';?>
-</div>
-<table>
-
+<br>
+<table width="95%" margin-left="auto" margin-right="auto" align="center">
 <tr>
-<!--   ◆商品counter No.= (No.1)  -->
-		<!--【商品名】-->
-		パワークッション16メン SHT-16M 2013SS《3Eタイト》《ローカット》《クレー・砂入り人工コート用
+	<td align="left" width="90%">
+	<!--【商品名】-->
+		<?php echo $_GET['product_name'];?>
 		</b>
-		<td valign="top" align="left" nowrap width="10%">
-		<!--【販売単価】-->
-		<b><font color="#FF3300">
-		販売価格         10000円（税込）　</font></b>
+	</td>
+	<td rowspan="2" valign="top" align="right" nowrap width="10%">
+		<form action="cart.php">
+			<input type="image" src="image/カート2.jpg" alt="カートに入れる" onclick="CartIn('DEF_Fgoodslist','r_gcode','N0012')" />
+			<select name="r_gquant[{$p['product_code']}]">
+			<?php
+				for($i = 1;$i <= $_GET['stock'] and $i <= 9; $i++){
+					echo "<option>$i</option>";
+				}
+			?>
+			</select>
+		</form>
+	</td>
+</tr>
+<tr>
+
+		<td valign="top" align="left" nowrap width="90%">
+			<!--【販売単価】-->
+			<b><font color="#FF3300">
+			販売価格         <?php echo $_GET['tanka'];?>円（税込）　</font></b>
 		</td>
-	    <br>
-		<td valign="top" align="right" nowrap width="10%">
-		<input type="image" src="image/カート2.jpg" alt="カートに入れる" onclick="CartIn('DEF_Fgoodslist','r_gcode','N0012')" />
-		<select name="r_gquant[{$p['product_code']}]">
-			<option value="1">1</option>
-		</select>
 
 </tr>
-<tr bgcolor="#FFFFFF">
-  <td height="5" colspan="3" align="center">
-  </td>
-  </tr>
-  <!--
-<tr bgcolor="#FFFFFF">
-  <td height="26" colspan="3" align="center">
-    <hr width="95%">
-  </td>
-</tr>
- -->
  </table>
-<br><hr><br>
+<hr>
 <div class="center">
-<?php include 'imgscript.php';?>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+function Gazou(mysrc){
+	document.pIMG.src=mysrc;
+}
+//-->
+</SCRIPT>
+<img name="pIMG" src="<?php echo img_tag($_GET['product_code']); ?>.jpg" border="0" width="300" height="300">
+<br>
+<FORM>
+<INPUT type="radio" name="myRB" onClick="Gazou('<?php echo img_tag($_GET['product_code']); ?>.jpg')">
+<INPUT type="radio" name="myRB" onClick="Gazou('<?php echo img_tag($_GET['product_code']); ?>(2).jpg')">
+<INPUT type="radio" name="myRB" onClick="Gazou('<?php echo img_tag($_GET['product_code']); ?>(3).jpg')">
+<INPUT type="radio" name="myRB" onClick="Gazou('<?php echo img_tag($_GET['product_code']); ?>(4).jpg')">
+
+</FORM>
 </div>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
 
@@ -116,7 +128,7 @@ h1 {
 }
 #tab-wrapper {
 	float:left;
-	width:800px;
+	width:50%;
 	margin-left: 10px;
 	padding-top:00px;
 }
@@ -167,9 +179,7 @@ width:30%
  <li ><a href="#douga">実演動画</a></li>
  </ul>
  <div id="tokutyo">
-    <p>今日のニュースは・・・・・・<br />
-ここがタブ1の内容です！<br />
-まぁこのhtmlのソースを表示させればhtmlがわかる人なら簡単に理解できますね＾＾</p>
+    <p><?php echo $_GET['comment'];?></p>
   </div>
   <div id="douga">
       <p>今日のスポーツは・・・・・・<br />
@@ -227,7 +237,7 @@ if( isset( $_POST[ 'test1' ] ) ){
 ?>
 
 原産国　日本<br>
-在庫：５
+在庫：<?php echo $_GET['stock']?>
 </div>
 <br>
 <br>

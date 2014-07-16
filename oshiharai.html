@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>oshiharai</title>
+<link rel="stylesheet" href="oshiharai.css">
+</head>
+<body>
+
+
+2.お支払方法<br />
+<form action="kakunin.html">
+  <br />お支払方法を選択<br />
+<input type="radio" id="chk1" name="oshiharai" onclick="chkdisp(this,'ans1')" /><label for="chk1">クレジットカード決済</label>
+<input type="radio" id="chk2" name="oshiharai" onclick="chkdisp(this,'ans2')" /><label for="chk2">コンビニ決済</label>
+<input type="radio" id="chk3" name="oshiharai" onclick="chkdisp(this,'ans3')" /><label for="chk3">代引き</label>
+<div id="ansdiv">
+<p id="ans1">カードで支払い<br />
+<select name="card">
+<option value=""selected>---カードを選択してください---</option>
+<option value="VISA">VISA</option>
+<option value="JCB">JCB</option>
+<option value="master card">master card</option>
+<option value="americanexpress">americanexpress</option>
+</select><br />
+<br />
+カード番号<br />
+<input type="text" name="name" size="30" value="" /><br />
+<br />
+有効期限<br />
+ <select name="select">
+ <option value="">--</option>
+ <option value="2014">2014</option>
+ <option value="2015">2015</option>
+ <option value="2016">2016</option>
+ <option value="2017">2017</option>
+ <option value="2018">2018</option>
+ <option value="2019">2019</option>
+ <option value="2020">2020</option>
+ <option value="2021">2021</option>
+ <option value="2022">2022</option>
+ <option value="2023">2023</option>
+ </select>
+<SELECT name="month">
+ <option value="">--</option>
+ <option value="1">1</option>
+ <option value="2">2</option>
+ <option value="3">3</option>
+ <option value="4">4</option>
+ <option value="5">5</option>
+ <option value="6">6</option>
+ <option value="7">7</option>
+ <option value="8">8</option>
+ <option value="9">9</option>
+ <option value="10">10</option>
+ <option value="11">11</option>
+ <option value="12">12</option>
+ </SELECT><br />
+<br />
+セキュリティコード<br />
+<input type="text" name="name" size="30" value="" /><br />
+
+ MODIFY SCREEN.
+
+</p>
+<p id="ans2">コンビニ決済<br />
+
+<img src="image/conveni/セブンイレブン完成.jpg"><input type="radio" id="sebun" value="セブン">
+
+<img src="image/conveni/ローソン完成.jpg"><input type="radio" id="roson" value="ローソン"><br>
+
+<img src="image/conveni/ファミマ完成.jpg"><input type="radio" id="famima" value="ファミマ">
+
+<img src="image/conveni/ミニストップ完成.jpg"><input type="radio" id="ministop" value="ミニストップ"><br>
+
+<img src="image/conveni/サークルｋ完成.jpg"><input type="radio" id="sakuru" value="サークル">
+
+<img src="image/conveni/デイリー完成.jpg"><input type="radio" id="dary" value="デイリー">
+
+<br /><br />
+コンビニでの支払いを選択された場合、配送日時の指定はできません。
+<br /><br />
+</p><br />
+<p id="ans3"><font size="5">代引きを使用される場合は、支払い代金に代引き手数料が加算されます。</font><br />
+</p>
+</div>
+<script type="text/javascript"><!--
+ function chkdisp( obj,id ) {
+  if( obj.checked ){
+   document.getElementById(id).style.display = "block";
+  }
+  else {
+   document.getElementById(id).style.display = "none";
+  }
+ }
+// --></script>
+
+<br />
+
+  <br />
+  <input type="submit" value="次へ" />
+</form>
+
+<br>
+
+
+</body>
+</html>

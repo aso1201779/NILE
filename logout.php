@@ -19,7 +19,7 @@ $_SESSION = array();
 </head>
  <body bgcolor="#f0fff4">
 
-<div class="center"><h2><FONT COLOR=RED><?php $errorMessage;?></FONT></h2>
+<div class="center"><h2><FONT COLOR=RED><?php echo $errorMessage;?></FONT></h2>
 <img src="image/秘密な写真.png" width="413" height="237" alt=""></div><br>
 <br>
 
